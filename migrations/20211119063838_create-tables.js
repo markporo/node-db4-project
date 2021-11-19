@@ -68,3 +68,10 @@ exports.down = function (knex, Promise) {
 // TABLE 2: -STEPS ID  -Step INSTRUCTIONS -STEP NUMBER -RECIPE ID  -INGREDIENTS ID -quantity ID
 // TABLE 3: -Ingredient Name  -INGREDIENT ID  
 // TABLE 4: -QUANTITY OF INGREDIENT -Quantity ID 
+
+
+///GUIDED TABLE
+// TABLE 1: -RECIPE NAME   -RECIPE ID 
+// TABLE 2: -Ingredient Name  -INGREDIENT ID  -ing_unit
+// TABLE 3: -STEPS ID  -Step INSTRUCTIONS -STEP_order -RECIPE ID (foreing key)  
+// TABLE 4: -step_id -step_id (foreign key) ing_id (foreign_key) Quantity (points to -ing_unit)
